@@ -1,5 +1,6 @@
-//Title : Duck typing
+//Title : map
 //Author : Preetha I
+//Date : 25/3/2024
 var __values = (this && this.__values) || function(o) {
     var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
     if (m) return m.call(o);
