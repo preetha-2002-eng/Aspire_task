@@ -1,3 +1,5 @@
+//Title : Duck typing
+//Author : Preetha I
 var studentEntries = new Set();
 studentEntries.add("Preetha");
 studentEntries.add("Rama");
