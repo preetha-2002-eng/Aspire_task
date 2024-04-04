@@ -1,5 +1,6 @@
-//Title : Duck typing
+//Title : set
 //Author : Preetha I
+//Date : 25/3/2024
 var studentEntries = new Set();
 studentEntries.add("Preetha");
 studentEntries.add("Rama");
