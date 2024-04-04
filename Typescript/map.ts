@@ -1,5 +1,6 @@
-//Title : Duck typing
+//Title : map
 //Author : Preetha I
+//Date : 25/3/2024
 var age = new Map();  
    
 age.set("Rakesh", 40);  
