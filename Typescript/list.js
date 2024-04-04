@@ -1,5 +1,6 @@
-//Title : Duck typing
+//Title : List 
 //Author : Preetha I
+//Date : 25/3/2024
 var employee_id = [101, 102, 103, 104, 105];
 console.log("Employee_ID:");
 for (var _i = 0, employee_id_1 = employee_id; _i < employee_id_1.length; _i++) {
