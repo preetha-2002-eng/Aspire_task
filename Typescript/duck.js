@@ -1,28 +1,29 @@
-var Dog = /** @class */ (function () {
-    function Dog() {
-        this.sound = "barking";
+//Title : Duck typing
+//Author : Preetha I
+var Student = /** @class */ (function () {
+    function Student() {
+        this.name = "Student_Ravi";
     }
-    return Dog;
+    return Student;
 }());
-var Lion = /** @class */ (function () {
-    function Lion() {
-        this.sound = "roaring";
+var Staff = /** @class */ (function () {
+    function Staff() {
+        this.name = "Staff_Reka";
     }
-    return Lion;
+    return Staff;
 }());
-var Goat = /** @class */ (function () {
-    function Goat() {
-        this.sound = "bleat";
+var Principal = /** @class */ (function () {
+    function Principal() {
+        this.name = "Principal_Kumar";
     }
-    Goat.prototype.swim = function () {
-        console.log("Cannot Swim!");
+    Principal.prototype.makeAdmission = function () {
+        console.log("Admit Student");
     };
-    return Goat;
+    return Principal;
 }());
-var lion = new Dog();
-var dog = new Lion();
-var lionTwo = new Goat();
-//let goat: Goat = new Lion();   
-console.log("Lion Sound: " + lion.sound);
-console.log("Dog sound: " + dog.sound);
-console.log("Lion sound: " + lionTwo.sound);
+var student = new Staff();
+var staff = new Student();
+var student2 = new Principal();
+console.log("Student name: " + student.name);
+console.log("Staff name: " + staff.name);
+console.log("Student2 name: " + student2.name);
