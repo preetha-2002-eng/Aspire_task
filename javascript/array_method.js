@@ -1,30 +1,30 @@
 //length
-const fruits = ["blueberry","banana", "apple", "peach"];
+const employee = ["Ravi","Raja", "Ram", "Reka"];
 console.log("-----------Length Method--------------");
-console.log(fruits.length); 
+console.log(employee.length); 
 
 //push method
-fruits.push("mango");
+employee.push("Kumar");
 console.log("-----------Push Method--------------");
-console.log(fruits);
+console.log(employee);
 
 //shift method
-fruits.shift("kiwi");
+employee.shift("Abi");
 console.log("-----------Shift Method--------------");
-console.log(fruits);
+console.log(employee);
 
 //reverse method
-const colors = ["red", "yellow", "blue"];
+const employee_id = [101,102,103,104,105];
 console.log("-----------Reverse Method--------------");
-console.log(colors.reverse() );
+console.log(employee_id.reverse() );
 
 //pop method
-colors.pop();
+employee_id.pop();
 console.log("-----------Pop Method--------------");
-console.log(colors);
+console.log(employee_id);
 
 //concat method
-const arr = fruits.concat(colors);
+const arr = employee.concat(employee_id);
 console.log("-----------concat Method--------------");
 console.log(arr);
 
