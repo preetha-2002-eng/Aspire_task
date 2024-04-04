@@ -1,3 +1,5 @@
+//Title : Duck typing
+//Author : Preetha I
 var __values = (this && this.__values) || function(o) {
     var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
     if (m) return m.call(o);
