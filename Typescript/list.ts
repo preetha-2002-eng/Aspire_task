@@ -1,5 +1,6 @@
-//Title : Duck typing
+//Title : List 
 //Author : Preetha I
+//Date : 25/3/2024
 let employee_id: number[] = [101, 102, 103, 104, 105];
 console.log("Employee_ID:");
 for (let id of employee_id) {
