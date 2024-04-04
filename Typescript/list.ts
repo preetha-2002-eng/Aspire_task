@@ -1,26 +1,28 @@
-let numbers: number[] = [1, 2, 3, 4, 5];
-console.log("Numbers:");
-for (let number of numbers) {
-    console.log(number);
+//Title : Duck typing
+//Author : Preetha I
+let employee_id: number[] = [101, 102, 103, 104, 105];
+console.log("Employee_ID:");
+for (let id of employee_id) {
+    console.log(id);
 }
-numbers.push(6);
-console.log("Updated Numbers:");
-for (let number of numbers) {
-    console.log(number);
+employee_id.push(106);
+console.log("Updated Employee_ID:");
+for (let id of employee_id) {
+    console.log(id);
 }
 
 
-let fruits: string[] = ["Apple", "Banana", "Orange"];
-console.log("Fruits:");
-for (let fruit of fruits) {
-    console.log(fruit);
+let employee_name: string[] = ["Ram", "Ravi", "Kumar"];
+console.log("Employee_Name:");
+for (let name of employee_name) {
+    console.log(name);
 }
-console.log("First fruit:", fruits[0]);
-console.log("Second fruit:", fruits[1]);
-fruits[1] = "Grapes";
-console.log("Updated Fruits:");
-for (let fruit of fruits) {
-    console.log(fruit);
+console.log("First employee:", employee_name[0]);
+console.log("Second employee:", employee_name[1]);
+employee_name[1] = "Reka";
+console.log("Updated Employee_Name:");
+for (let name of employee_name) {
+    console.log(name);
 }
 
 
