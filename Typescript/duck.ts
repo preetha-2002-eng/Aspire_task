@@ -1,18 +1,20 @@
-class Dog {  
-    sound = "barking";  
+//Title : Duck typing
+//Author : Preetha I
+class Student {  
+    name = "Student_Ravi";  
 }  
-class Lion {  
-    sound = "roaring";  
+class Staff {  
+    name = "Staff_Reka";  
 }  
-class Goat {  
-    sound = "bleat";  
-    swim(){  
-        console.log("Cannot Swim!");  
+class Principal {  
+    name = "Principal_Kumar";  
+    makeAdmission(){  
+        console.log("Admit Student");  
     }  
 }  
-let lion: Lion = new Dog();  
-let dog: Dog = new Lion(); 
-let lionTwo: Lion = new Goat(); 
-console.log("Lion Sound: "+lion.sound);  
-console.log("Dog sound: "+dog.sound);  
-console.log("Lion sound: "+lionTwo.sound);  
+let student: Student = new Staff();  
+let staff: Staff = new Student(); 
+let student2: Student = new Principal(); 
+console.log("Student name: "+student.name);  
+console.log("Staff name: "+staff.name);  
+console.log("Student2 name: "+student2.name);  
