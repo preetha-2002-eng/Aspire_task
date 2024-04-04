@@ -1,5 +1,6 @@
 //Title : Duck typing
 //Author : Preetha I
+//Date : 22/3/2024
 class Student {  
     name = "Student_Ravi";  
 }  
