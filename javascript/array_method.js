@@ -1,3 +1,6 @@
+//Title : Javascript builtin methods
+//Author : Preetha I
+//Date : 21/3/2024
 //length
 const employee = ["Ravi","Raja", "Ram", "Reka"];
 console.log("-----------Length Method--------------");
