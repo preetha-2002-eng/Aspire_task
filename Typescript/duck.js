@@ -1,6 +1,6 @@
 //Title : Duck typing
 //Author : Preetha I
-//Date : 22/3/2024
+//Date : 25/3/2024
 var Student = /** @class */ (function () {
     function Student() {
         this.name = "Student_Ravi";
