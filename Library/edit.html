@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>edit</title>
+</head>
+<body>
+    
+    <form action="editbook.html" method="GET" id="edit">
+        
+        <div class="head">
+            
+            <h3>Edit Book</h3>
+            <div class="close-btn" onclick="redirectToPage('dash.html')">X</div>
+        </div>
+        
+        <div class="main">
+            
+            <label for="id">Book ID</label>
+            <input type="text" placeholder="Enter Book ID" id="id" name="id" required>
+
+            <div style="text-align: center;">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+           
+        </div>
+    </form>
+  
+    <script>
+        function redirectToPage(pageUrl) {
+    window.location.href = pageUrl;
+}
+document.getElementById("edit").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            const bookId = document.getElementById("id").value;
+            redirectToPage("editbook.html?id=" + bookId); // Redirect to the editbook page with book ID as a query parameter
+        });
+
+    </script>
+</body>
+</html>

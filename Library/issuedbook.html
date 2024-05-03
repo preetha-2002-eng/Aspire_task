@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>issuedbook</title>
+</head>
+<body>
+    
+ 
+       <div class="view">
+        <div class="head">
+            
+            <h3>Issued Book</h3>
+            <div class="close-btn" onclick="redirectToPage('home.html')">X</div>
+        </div>
+        
+        <div class="main">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book_ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Database Management System</td>
+                        <td>Raghu Ramakrishnan</td>
+                    </tr>
+                   
+                    
+                </tbody>
+            </table>
+           
+        </div>
+    </div> 
+    
+  
+    <script>
+        function redirectToPage(pageUrl) {
+    window.location.href = pageUrl;
+}
+
+    </script>
+</body>
+</html>

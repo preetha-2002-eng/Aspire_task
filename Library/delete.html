@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>delete</title>
+</head>
+<body>
+    
+    <form action="" id="delete">
+        
+        <div class="head">
+            
+            <h3>Delete Book</h3>
+            <div class="close-btn" onclick="redirectToPage('dash.html')">X</div>
+        </div>
+        
+        <div class="main">
+            
+            <label for="id">Book ID</label>
+            <input type="text" id="id" name="id" placeholder="Enter Book ID" required>
+
+            <div style="text-align: center;">
+                <button type="submit" >Delete</button>
+            </div>
+           
+        </div>
+    </form>
+   
+    <script>
+        function redirectToPage(pageUrl) {
+    window.location.href = pageUrl;
+}
+
+        document.getElementById("delete").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+        
+        var bookId = document.getElementById("id").value;
+        var confirmation = confirm("Do you want to delete book_id = " + bookId + "?");
+    
+        if (confirmation) {
+            // Perform delete action here, for example, redirect to a success page
+            alert("Book with ID " + bookId + " successfully deleted.");
+            redirectToPage("dash.html");
+        }
+    });</script>
+       
+</body>
+</html>

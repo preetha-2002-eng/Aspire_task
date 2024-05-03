@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>view</title>
+</head>
+<body>
+    
+ 
+       <div class="view">
+        <div class="head">
+            
+            <h3>Book Table</h3>
+            <div class="close-btn" onclick="redirectToPage('dash.html')">X</div>
+        </div>
+        
+        <div class="main">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book_ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Database Management System</td>
+                        <td>Raghu Ramakrishnan</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>OOPS</td>
+                        <td>Dan Ingalls</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Python</td>
+                        <td>John M Zelle</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>C</td>
+                        <td>Dennis Ritchie </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+           
+        </div>
+    </div> 
+    
+  
+    <script>
+        function redirectToPage(pageUrl) {
+    window.location.href = pageUrl;
+}
+
+    </script>
+</body>
+</html>

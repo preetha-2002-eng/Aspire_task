@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>return</title>
+</head>
+<body>
+    
+    <form action="" id="return">
+        
+        <div class="head">
+            
+            <h3>Return Book</h3>
+            <div class="close-btn" onclick="redirectToPage('home.html')">X</div>
+        </div>
+        
+        <div class="main">
+
+            <label for="id">Book ID</label>
+            <input type="text" id="id" name="id" placeholder="Enter Book ID" required>
+
+            <div style="text-align: center;">
+                <button type="submit" >Return</button>
+            </div>
+           
+        </div>
+    </form>
+  
+    <script>
+        function redirectToPage(pageUrl) {
+    window.location.href = pageUrl;
+}
+document.getElementById("return").addEventListener("submit", function(event) {
+            alert("You have successfully returned the book!");
+        });
+     
+    </script>
+</body>
+</html>
