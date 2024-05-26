@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    /* background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffreebackground%2Fabstract-background-with-subtle-pastel-watercolor-texture_13406240.html&psig=AOvVaw0Ehzy57r0A4dg3YC3uLl1W&ust=1716358480413000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNiiuN-LnoYDFQAAAAAdAAAAABAE'); */
+}
+  
+
+  .navbar {
+    background-color:  #4c82af;
+    padding: 10px 0;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-links a.active {
+    font-weight: bold;
+  }
+  
+  
+  .container {
+    margin: 50px auto;
+    width: 80%;
+  }
+  
+  .router-link {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .router-outlet {
+    margin-top: 50px;
+  }
