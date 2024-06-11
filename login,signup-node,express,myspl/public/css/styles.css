@@ -1,0 +1,76 @@
+/* Style for dashboard */
+nav{
+    background-color: #fab175;
+    color: black;
+    height: 55px;
+    font-size: 35px;
+    padding: 10px;
+    
+  }
+  body{
+    margin: 0;
+    background-image: url('../asset/lib.avif');
+    font-family: 'Times New Roman', Times, serif;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+  }
+  
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+      border-radius: 20px;
+    }
+  
+  .grid-item {
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      font-size: 30px;
+      margin-top: 50px;
+      
+  }
+  
+  .grid-item:hover{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  .grid-container a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .logout {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    padding: 10px;
+    font-size: 30px;
+    
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  footer {
+    background-color: #fab175;
+    color:black; 
+    padding: 20px; 
+    text-align: center; 
+    position: fixed; 
+    width: 100%; 
+    bottom: 0;
+  }
+  
+  footer p {
+    margin: 0; 
+  }
+  
