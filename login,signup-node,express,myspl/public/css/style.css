@@ -1,0 +1,114 @@
+/* Style for login and signup */
+
+body 
+{
+  font-family: 'Times New Roman', Times, serif;
+  color:whitesmoke;
+  padding: 80px;
+  background-image: url('../asset/lib.avif');
+background-size: cover; 
+background-repeat: no-repeat; 
+background-position: center center; 
+    
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+form{
+    width:35rem;
+    margin-top: 50px;
+    margin: auto;
+    color:whitesmoke;
+    background-color: rgba(15, 15, 11, 0.582);
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 22px;
+    position: relative;
+}
+
+input[type=text], input[type=password],input[type=email]{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+
+button {
+    background-color:#552905;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 30%;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.head{
+    text-align: center;
+}
+
+.main{
+    padding: 16px;
+}
+
+
+
+  .register{
+    color: white;
+    text-align: center;
+  }
+  
+  .register a{
+    color: rgb(74, 146, 235);
+  }
+  
+  .register a:link{
+    text-decoration: none;
+  }
+
+  .close-btn{
+    position: absolute;
+    top: 15px;
+    right:15px;
+    cursor: pointer;
+  }
+  .close-btn:hover {
+    color: #666;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  color:black;
+}
+
+.view{
+  width:35rem;
+  margin-top: 50px;
+  margin: auto;
+  color:whitesmoke;
+  background-color: rgba(15, 15, 11, 0.582);
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 22px;
+  position: relative;
+}
