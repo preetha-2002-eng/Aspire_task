@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <title>issue</title>
+</head>
+<body>
+    
+    <form action="" id="edit">
+        
+        <div class="head">
+            
+            <h3>Issue Book</h3>
+            <div class="close-btn" onclick="redirectToPage('dash.html')">X</div>
+        </div>
+        
+        <div class="main">
+
+            <label for="id"> Student ID</label>
+            <input type="text" id="studentid" name="studentid" placeholder="Enter Student ID" required>
+            
+            <label for="id">Book ID</label>
+            <input type="text" id="id" name="id" placeholder="Enter Book ID" required>
+
+            <div style="text-align: center;">
+                <button type="submit" id="issueButton">Issue</button>
+            </div>
+           
+        </div>
+    </form>
+  
+    <script>
+        function redirectToPage(pageUrl) {
+    window.location.href = pageUrl;
+}
+document.getElementById("edit").addEventListener("submit", function(event) {
+            alert("The book has been successfully issued!");
+        });
+
+     
+    </script>
+</body>
+</html>

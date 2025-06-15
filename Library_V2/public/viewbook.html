@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <title>viewbook</title>
+</head>
+<body>
+    
+ 
+       <div class="view">
+        <div class="head">
+            
+            <h3>Book Table</h3>
+            <div class="close-btn" onclick="redirectToPage('home.html')">X</div>
+        </div>
+        
+        <div class="main">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book_ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Database Management System</td>
+                        <td>Raghu Ramakrishnan</td>
+                        <td><button style="width: 100%;" onclick="requestBook(101)">Request</button></td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>OOPS</td>
+                        <td>Dan Ingalls</td>
+                        <td><button style="width: 100%;" onclick="requestBook(102)">Request</button></td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Python</td>
+                        <td>John M Zelle</td>
+                        <td><button style="width: 100%;" onclick="requestBook(103)">Request</button></td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>C</td>
+                        <td>Dennis Ritchie </td>
+                        <td><button style="width: 100%;" onclick="requestBook(104)">Request</button></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+           
+        </div>
+    </div> 
+    
+  
+    <script>
+        function redirectToPage(pageUrl) {
+    window.location.href = pageUrl;
+}
+function requestBook(bookId) {
+        // Display an alert message
+        alert("Your request for the book has been submitted!");
+    }
+    </script>
+</body>
+</html>
