@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Edit Book</title>
+</head>
+<body>
+    <form id="editbook">
+        <div class="head">
+            <h3>Edit Book</h3>
+            <div class="close-btn" onclick="redirectToPage('dash.html')">X</div>
+        </div>
+        <div class="main">
+            <label for="id">Book ID</label>
+            <input type="text" id="id" name="id" placeholder="Enter Book ID" readonly>
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter Book Title" required>
+
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" placeholder="Enter Author Name" required>
+           
+            <div style="text-align: center;">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+
+        // Fetch book details and populate the form
+        function fetchBookDetails(bookId) {
+            fetch(`/book/${bookId}`)
+                .then(response => response.json())
+                .then(book => {
+                    document.getElementById('id').value = book.id;
+                    document.getElementById('title').value = book.title;
+                    document.getElementById('author').value = book.author;
+                })
+                .catch(error => console.error('Error fetching book details:', error));
+        }
+
+        // Get the book ID from the query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const bookId = urlParams.get('id');
+        if (bookId) {
+            fetchBookDetails(bookId);
+        }
+
+        // Handle form submission to update book details
+        document.getElementById('editbook').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const id = document.getElementById('id').value;
+            const title = document.getElementById('title').value;
+            const author = document.getElementById('author').value;
+
+            fetch('/editBook', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ id, title, author })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (data.message === 'Book updated successfully') {
+                    redirectToPage('view.html');
+                }
+            })
+            .catch(error => console.error('Error updating book:', error));
+        });
+    </script>
+</body>
+</html>

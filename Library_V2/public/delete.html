@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Delete Book</title>
+</head>
+<body>
+    <form id="delete">
+        <div class="head">
+            <h3>Delete Book</h3>
+            <div class="close-btn" onclick="redirectToPage('dash.html')">X</div>
+        </div>
+        <div class="main">
+            <label for="id">Book ID</label>
+            <input type="text" id="id" name="id" placeholder="Enter Book ID" required>
+            <div style="text-align: center;">
+                <button type="submit">Delete</button>
+            </div>
+        </div>
+    </form>
+    <script>
+        function redirectToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+
+        document.getElementById("delete").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+
+            var bookId = document.getElementById("id").value;
+            var confirmation = confirm("Do you want to delete book_id = " + bookId + "?");
+
+            if (confirmation) {
+                fetch('/deleteBook', {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ id: bookId })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                    if (data.message === 'Book deleted successfully') {
+                        redirectToPage('dash.html');
+                    }
+                })
+                .catch(error => console.error('Error deleting book:', error));
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <title>issuedbook</title>
+</head>
+<body>
+    
+ 
+       <div class="view">
+        <div class="head">
+            
+            <h3>Issued Book</h3>
+            <div class="close-btn" onclick="redirectToPage('home.html')">X</div>
+        </div>
+        
+        <div class="main">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book_ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Return</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Database Management System</td>
+                        <td>Raghu Ramakrishnan</td>
+                        <td><button style="width: 100%;" onclick="returnBook(this)">Return</button></td>
+                   
+                    </tr>
+                   
+                    
+                </tbody>
+            </table>
+           
+        </div>
+    </div> 
+    
+  
+    <script>
+        function redirectToPage(pageUrl) {
+    window.location.href = pageUrl;
+}
+function returnBook(button) {
+            // Display an alert message
+            if (confirm("Are you sure you want to return this book?")) {
+                // Remove the book row from the table
+                var row = button.parentElement.parentElement;
+                row.parentElement.removeChild(row);
+                alert("Book has been returned successfully!");
+            }
+        }
+
+    </script>
+</body>
+</html>

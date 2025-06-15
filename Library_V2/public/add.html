@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Add Book</title>
+</head>
+<body>
+    <form action="/addBook" method="POST" id="add">
+        <div class="head">
+            <h3>Add Book</h3>
+            <div class="close-btn" onclick="redirectToPage('dash.html')">X</div>
+        </div>
+        <div class="main">
+            <label for="id">Book ID</label>
+            <input type="text" id="id" name="id" placeholder="Enter Book ID" required>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter Book Title" required>
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" placeholder="Enter Author Name" required>
+            <div style="text-align: center;">
+                <button type="submit" id="addButton">Add</button>
+            </div>
+        </div>
+    </form>
+    
+    <script src="./js/script.js"></script>
+    <script>
+        // Add book
+    document.getElementById('add').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const id = document.getElementById('id').value;
+        const title = document.getElementById('title').value;
+        const author = document.getElementById('author').value;
+    
+        fetch('/addBook', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ id, title, author })
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+            if (data.message === 'Book added successfully') {
+                redirectToPage('view.html');
+            }
+        })
+        .catch(error => {
+            console.error('Error adding book:', error);
+            alert('Error adding book');
+        });
+    });
+
+
+// Function to redirect to a new page
+function redirectToPage(pageUrl) {
+        window.location.href = pageUrl;
+    }
+    
+    </script>
+</body>
+</html>
