@@ -1,0 +1,24 @@
+<div class="cart-containter">
+  <h2>Your Cart</h2>
+  
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <div *ngIf="findProduct(item.productId) as product">
+      <img [src]="product.images[0]" alt="{{ product.name }}" class="item-image" />
+      <div class="item-details">
+        <h3>{{ product.name }}</h3>
+      <p>Price: {{ product.price | currency:'INR':'symbol':'1.2-2' }}</p>
+      <p>Quantity: {{ item.quantity }}</p>
+      </div>
+      
+      <button class="cart-item-remove" (click)="removeFromCart(item.productId)">Remove</button>
+    </div>
+  </div>
+  <div class="cart-total">
+    <h3>Total Price: ₹{{ totalPrice }}</h3>
+</div>
+  
+<button class="checkout-btn" (click)="checkout()">
+  Proceed to Checkout
+</button> 
+</div>
+

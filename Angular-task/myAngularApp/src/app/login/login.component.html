@@ -1,0 +1,23 @@
+<div class="login-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="Enter your username" required />
+      </div>
+  
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Enter your password" required />
+      </div>
+
+      <p class="signup-link">
+        Don't have an account? 
+        <a (click)="redirectToSignup()">Sign up</a>
+      </p>
+    
+  
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  

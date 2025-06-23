@@ -1,0 +1,18 @@
+<nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <a routerLink="/" routerLinkActive="active">Online Shopping</a>
+      </div>
+      <div class="navbar-links">
+        <a routerLink="/home" routerLinkActive="active">Home</a>
+        <a routerLink="/products" routerLinkActive="active">Products</a>
+        <a routerLink="/cart" routerLinkActive="active">Cart</a>
+        <a routerLink="/checkout" routerLinkActive="active">Checkout</a>
+        <a routerLink="/history" routerLinkActive="active">History</a>    
+        <button (click)="logout()">Logout</button>
+
+      </div>
+    </div>
+  </nav>
+
+<router-outlet></router-outlet>

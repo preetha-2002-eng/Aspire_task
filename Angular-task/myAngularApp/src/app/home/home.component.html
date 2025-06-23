@@ -1,0 +1,58 @@
+   <!-- Welcome Section -->
+  <section class="welcome-section">
+    <div class="content">
+    <h1>Welcome to Our Shopping Website</h1>
+    <button class="login-btn" (click)="redirectToLogin()">Login</button>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section class="about-section">
+    <h1 style="text-align: center;">About Us</h1>
+    <div class="about-card">
+      <img src="/assets/about.jfif" alt="About Image">
+      <div class="about-details">
+        
+        <p>At Our Shopping Website, we believe in providing an exceptional shopping experience to our customers by offering a diverse range of high-quality products at affordable prices. Our platform is designed to cater to the needs of fashion enthusiasts who seek the latest trends and timeless classics. With a focus on customer satisfaction, we ensure that every item we offer meets rigorous standards of quality and style.<br><br>
+            We take pride in our commitment to ethical sourcing and sustainability, ensuring that our products are not only fashionable but also responsibly produced. Our dedicated team works tirelessly to curate a selection that reflects the latest in fashion while maintaining a focus on comfort and durability. Whether you're looking for casual wear, formal attire, or unique accessories, we have something for everyone.<br><br>
+            In addition to our extensive product range, we are dedicated to providing outstanding customer service. Our friendly and knowledgeable support team is always ready to assist with any inquiries or concerns, ensuring a smooth and enjoyable shopping experience. We also offer fast and reliable shipping, easy returns, and a secure online shopping environment.<br><br>
+
+            At Our Shopping Website, our mission is to make online shopping convenient, enjoyable, and accessible to all. We are constantly evolving and expanding our offerings to meet the needs of our customers, and we look forward to serving you on your shopping journey.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services We Offer -->
+  <section class="services-section">
+    <h1 style="text-align: center;">Services We Offer</h1>
+    <div class="services-container">
+      <div class="service-card" *ngFor="let service of services">
+        <img [src]="service.image" alt="Service Image">
+        <h3>{{ service.name }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Us -->
+  <section class="contact-section">
+    <h1 style="text-align: center;">Contact Us</h1>
+    <form (ngSubmit)="onSubmitContactForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="contactForm.name" name="name"  required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="contactForm.email" name="email"  required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" [(ngModel)]="contactForm.message" name="message" required></textarea>
+      
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Our Shopping Website. All rights reserved.</p>
+  </footer>
+  

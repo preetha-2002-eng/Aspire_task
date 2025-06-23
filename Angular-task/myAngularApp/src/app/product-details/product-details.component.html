@@ -1,0 +1,54 @@
+<div class="product-details-container">
+  <div class="product-images">
+    <div class="main-image">
+      <img [src]="selectedImage" alt="Product Image" />
+    </div>
+    <div class="thumbnail-images">
+      <img
+        *ngFor="let image of product.images"
+        [src]="image"
+        (click)="selectImage(image)"
+        alt="Thumbnail Image"
+      />
+    </div>
+  </div>
+
+  
+  <div class="product-info">
+    <div class="card">
+      <h2>{{ product.name }}</h2>
+      <p class="price">₹{{ product.price }}</p>
+      <div class="rating">
+        <span>{{ product.rating }} ★</span>
+        <span>{{ product.reviews }} Reviews</span>
+      </div>
+      <p class="delivery">Free Delivery</p>
+    </div>
+
+    <div class="card">
+      <h3>Select Size</h3>
+      <div class="sizes">
+        <button
+          *ngFor="let size of product.availableSizes"
+          (click)="selectSize(size)"
+          [class.active]="selectedSize === size"
+        >
+          {{ size }}
+        </button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Product Details</h3>
+      <ul>
+        <li *ngFor="let detail of product.details">{{ detail }}</li>
+      </ul>
+    </div>
+
+   
+    <div class="action-buttons">
+      <button class="add-to-cart" (click)="addToCart(product.id)">Add to Cart</button>
+      <button class="buy-now" (click)="buyNow()">Buy Now</button>
+    </div>
+  </div>
+</div>

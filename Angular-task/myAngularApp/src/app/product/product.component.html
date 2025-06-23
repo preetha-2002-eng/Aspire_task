@@ -1,0 +1,33 @@
+
+ <div class="filter-container">
+  <label for="category">Category:</label>
+  <select id="category" [(ngModel)]="categoryInput">
+    <option value="all">All</option>
+    <option value="women">Women</option>
+    <option value="men">Men</option>
+    <option value="kids">Kids</option>
+  </select>
+
+  <label for="price">Price Range:</label>
+  <select id="price" [(ngModel)]="price">
+    <option value="all">All</option>
+    <option value="100-300">100-300</option>
+    <option value="300-500">300-500</option>
+    <option value="500-1000">500-1000</option>
+  </select>
+</div>
+
+<div class="product-container">
+
+  <div *ngFor="let product of filteredProducts()" class="product-card" >
+    
+    <img [src]="product.images[0]" alt="{{ product.name }}" />
+    <a [routerLink]="['/products', product.id]" >
+    <div class="product-details">
+      <p class="product-name">{{ product.name }}</p>
+      <h2>{{ product.price | currency:'INR':'symbol':'1.2-2' }}</h2>
+    </div>
+  </a>
+  </div>
+</div>
+
