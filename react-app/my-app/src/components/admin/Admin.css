@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    margin: 0;
+    background-image: url('../../asset/lib.avif');
+    font-family: 'Times New Roman', Times, serif;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #fab175;
+    color: black;
+    height: 55px;
+    font-size: 35px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logout a {
+    color: black; 
+    padding: 20px; 
+    text-align: center; 
+    width: 100%;
+    text-decoration: none;
+}
+
+.navbar .logout a:hover {
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    color:black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+/* .grid-item i {
+    font-size: 24px;
+} */
+
+.grid-item:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.grid-container a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  footer {
+    background-color: #fab175;
+    color: black; 
+    padding: 20px; 
+    text-align: center; 
+    flex-shrink: 0;
+    width: 100%;
+}
+
+footer p {
+     margin: 0; 
+}
+

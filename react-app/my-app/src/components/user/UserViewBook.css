@@ -1,0 +1,54 @@
+
+
+/* Container for viewing books */
+.user-view-books-container {
+    width: 35rem;
+    margin-top: 50px;
+    margin: auto;
+    color: whitesmoke;
+    background-color: rgba(15, 15, 11, 0.582);
+    border-radius: 12px;
+    padding: 25px;
+    font-size: 22px;
+    position: relative;
+  }
+  
+  /* Header styling */
+  .head {
+    text-align: center;
+  }
+  
+  /* Close button styling */
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: whitesmoke;
+  }
+  
+  .close-btn:hover {
+    color: #666;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  td {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: whitesmoke;
+  }

@@ -1,0 +1,258 @@
+nav{
+    background-color: #fab175;
+    color: black;
+    height: 55px;
+    font-size: 35px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-title {
+    font-size: 30px;
+}
+
+body{
+    margin: 0;
+    background-image: url('../asset/lib.avif');
+    font-family: 'Times New Roman', Times, serif;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.login a {
+    color: black;
+    text-decoration: none;
+    margin-left: 15px; /* Space between each link */
+    font-size: 20px;
+}
+
+.login a:first-child {
+    margin-left: 0; /* No margin for the first link */
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+main {
+    height: calc(100vh - 55px - 60px); /* Adjust height for nav and footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    margin: 20px 0;
+}
+
+section:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.8); /* Alternate background color */
+    color: black;
+}
+
+
+
+.about-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-content {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.about-content h2, .about-content h3 {
+    text-align: center;
+}
+
+.about-content p, .about-content ul, .about-content li {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+.services-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for cards */
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    margin-top: 0;
+}
+
+/* Contact Us Section */
+#contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 30px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between; /* To utilize full width */
+    align-items: stretch; 
+    width: 100%; /* Utilize full width */
+    max-width: 1200px; /* Adjust max width as needed */
+    margin: 0 auto; /* Center content */
+}
+
+.contact-info {
+    flex: 1; /* Occupy 50% of the width */
+    background-color:#fab175; /* Background color for contact info side */
+    padding: 30px; /* Add padding for content */
+    text-align: left; /* Align text to left */
+    color: white; /* Text color */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.contact-info h3 {
+    color:black; /* Heading color */
+    margin-bottom: 20px;
+}
+
+.info {
+    flex: 1; /* Expand to fill available space */
+}
+
+.info p {
+    color: black; /* Text color */
+    margin-bottom: 20px;
+}
+
+.feedback {
+    flex: 1; 
+    padding: 30px; 
+    text-align: left; 
+    background-color: #fff; 
+    color: #333; 
+}
+
+.feedback h3 {
+    margin-bottom: 20px;
+    color: #333; /* Heading color */
+}
+
+.feedback form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.feedback form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feedback form input[type="text"],
+.feedback form input[type="email"],
+.feedback form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.feedback form textarea {
+    resize: vertical;
+}
+
+.feedback form input[type="submit"] {
+    background-color: #af5e1b;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.feedback form input[type="submit"]:hover {
+    background-color: #803f0a;
+}
+
+
+
+footer {
+    background-color: #fab175;
+    color: black; 
+    padding: 20px; 
+    text-align: center; 
+    flex-shrink: 0;
+    width: 100%;
+}
+
+footer p {
+     margin: 0; 
+}
+

@@ -1,0 +1,62 @@
+
+.add-book-container {
+    padding: 30px;
+  }
+  
+ h3{
+    text-align: center;
+    color:white;
+ }
+  
+  .close{
+    position: absolute;
+    top: 15px;
+    right:15px;
+    cursor: pointer;
+  }
+  .close:hover {
+    color: #666;
+}
+  
+  form {
+    width:35rem;
+    margin-top: 50px;
+    margin: auto;
+    color:whitesmoke;
+    background-color: rgba(15, 15, 11, 0.582);
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 22px;
+    position: relative;
+  }
+  
+  label {
+    margin: 10px 0 5px;
+  }
+  
+  input {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+  
+  button {
+    background-color:#552905;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+ 
+  }
+  button:hover { 
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  

@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": "18c5",
+      "username": "Preetha",
+      "email": "preetha@gmail.com",
+      "password": "$2a$10$ePJ8EB26bn7nUWPv/o6GwOFwPUgldWb4cExoCQYumVJkPFcAhB2yG"
+    },
+    {
+      "id": "6227",
+      "username": "Rama",
+      "email": "rama@gmail.com",
+      "password": "$2a$10$pElyU71l3q54ozJ9TINV4.gbxX69zpl1iLl1tcLwSkmmCOyD.i4J2"
+    }
+  ],
+  "books": [
+    {
+      "id": "101",
+      "title": "Database Management System",
+      "author": "Raghu Ramakrishnan"
+    },
+    {
+      "id": "102",
+      "title": "C",
+      "author": "Dennis Ritchie"
+    },
+    {
+      "id": "103",
+      "title": "Python",
+      "author": "Guido van Rossum"
+    },
+    {
+      "id": "104",
+      "title": "C#",
+      "author": "Scott Wiltamuth"
+    }
+  ],
+  "issuedBooks": [
+    {
+      "id": "1d2e",
+      "bookId": "103",
+      "userId": "6227"
+    }
+  ],
+  "requests": [],
+  "returns": []
+}
